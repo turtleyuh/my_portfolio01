@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="huycls.css">
+		<script src="https://kit.fontawesome.com/3f40b51c52.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target="#navbar" data-offset="50">
+		<nav id="navbar" class="navbar navbar-expand-md  sticky-top">
+		  <div class="container">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#section1">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#section2">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#section3">Projects</a>
+			      </li>
+			    </ul>
+			  </div>
+			<a  class="contact" href="#section4"><span>&lt;</span>Contact me<span>&#47;&gt;</span></a>  
+		  </div>
+		</nav>
+			<header id="section1" class="header section-overlay bg-prop gradient">
+				<div class="middle">
+					<img src="./undraw/avatar.svg" alt="">
+					<h1>Hi, I'm Huy</h1>
+					<p class="fancy">A front-end developer.</p>
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fab fa-codepen"></i></a>
+					<a href="#"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</header>
+			<section id="section2" class="about container-fluid row">
+				<div class="content col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<h2>About me</h2>
+					<h4>Front-end Web Developer</h4>
+					<p>Fusce ullamcorper lobortis urna quis pharetra. Aenean sed libero aliquam, commodo nunc vitae, consequat odio. Duis feugiat lacinia nisl ut laoreet. Quisque tortor eros, sodales vitae sollicitudin sed, viverra vel nisl. Aenean porta augue sit amet elit accumsan, a ullamcorper lectus condimentum. Vestibulum sit amet odio pretium, dictum lorem ac, molestie magna. Maecenas scelerisque non neque eu congue. Nulla facilisi. Phasellus quis finibus ex. Aliquam at eros ut nisi egestas blandit. Mauris nec erat ut odio faucibus malesuada sodales vitae nulla. Maecenas quis tincidunt turpis. Suspendisse pellentesque nibh metus, id facilisis orci aliquam eu. Vivamus nec lacus ac mauris molestie interdum. Mauris leo eros, consectetur vel vehicula quis, aliquet vitae urna.</p>
+					<button id="download">Download my Resume</button>
+				</div>
+				<div class="skills col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<h2 class="content2">Skills</h2>
+					<ul>
+						<li>
+							<i class="fab fa-html5"></i>
+							<span id="myProgress" >
+								  <div class="bar" id="htmlBar" data-label="Loading...23%"></div>
+							</span>
+						</li>
+						<li><i class="fab fa-css3"></i>
+							<span id="myProgress">
+					 			 <div class="bar" id="cssBar" data-label="Loading...23%"></div>
+							</span>
+						</li>
+						<li> <i class="fab fa-js-square"></i>
+						<span id="myProgress">
+					  <div class="bar" id="jsBar" data-label="Loading...23%"></div>
+					</span>
+						</li>
+						<li><i class="fab fa-bootstrap"></i>
+							<span id="myProgress">
+					  			<div class="bar" id="bsBar" data-label="Loading...23%"></div>
+							</span>
+						</li>
+						<li> <i class="fab fa-react"></i>
+							<span id="myProgress">
+					  			<div class="bar" id="reactBar" data-label="Loading...23%"></div>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="paralax"></div>
+			<section id="section3" class="portfolio">
+				<div class="projects">
+						<h2>Current projects:</h2>
+					<!-- Tab links -->
+					<div class="tab">
+					  <button id="openDefault" class="tablinks" onclick="openProject(event, 'Web')">Web</button>
+					  <button class="tablinks" onclick="openProject(event, 'Other')">Other</button>
+					</div>
+					<!-- Tab content -->
+					<div id="Web" class="tabcontent">
+					  <div class="card-container">
+					  	<div class="card">
+						<img src="./huyimages/hotelcalluna.png" alt="Project hotel Calluna">
+						<div class="overlay">
+							<div class="text">
+								<h3>Hotel Calluna</h3>
+								<p>Fusce ullamcorper lobortis urna quis pharetra lobortis urna quis pharetra.<p>
+								<p>Tecnologies used:  Aenean sed libero aliquam.</p>
+								<a href="#"><i class="fab fa-github"></i></a>
+								<a href="#"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+						</div>
+						<div class="card">
+							<img src="./huyimages/lapshop.png" alt="Project hotel Calluna">
+							<div class="overlay">
+								<div class="text">
+									<h3>Shop laptop</h3>
+									<p>Fusce ullamcorper lobortis urna quis pharetra lobortis urna quis pharetra.<p>
+									<p>Tecnologies used:  Aenean sed libero aliquam.</p>
+									<a href="#"><i class="fab fa-github"></i></a>
+									<a href="#"><i class="fas fa-link"></i></a>
+								</div>
+							</div>
+						</div>
+					  </div>
+					</div>
+					<div id="Other" class="tabcontent">
+					  <div class="card-container">
+					  	<div class="card">
+						<img src="./huyimages/lapshop.png" alt="Project hotel Calluna">
+						<div class="overlay">
+							<div class="text">
+								<h3>Hotel Calluna</h3>
+								<p>Fusce ullamcorper lobortis urna quis pharetra lobortis urna quis pharetra.<p>
+								<p>Tecnologies used:  Aenean sed libero aliquam.</p>
+								<a href="#"><i class="fab fa-github"></i></a>
+								<a href="#"><i class="fas fa-link"></i></a>
+							</div>
+						</div>
+						</div>
+						<div class="card">
+							<img src="./huyimages/hotelcalluna.png" alt="Project hotel Calluna">
+							<div class="overlay">
+								<div class="text">
+									<h3>Hotel Calluna</h3>
+									<p>Fusce ullamcorper lobortis urna quis pharetra lobortis urna quis pharetra.<p>
+									<p>Tecnologies used:  Aenean sed libero aliquam.</p>
+									<a href="#"><i class="fab fa-github"></i></a>
+									<a href="#"><i class="fas fa-link"></i></a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				
+				</div>
+			</section>
+			<section id="section4" class="contact-page">
+				<div class="contact-container col-md-8">
+					<div class="contact-header">
+						<h3>Get In Touch</h3>
+						<p>Lorem ipsum dolor sit amet elit sed do eiusmod tempor labore dolore magna aliqua enim minim veniam quis nostrud nisi laboris.</p>
+					</div>
+					<form class="contact-form">
+						<div class="row col-md-12 two-input">
+							<div class="col-md-6">
+								<input type="text" placeholder="Name*" required="required">
+							</div>
+							<div class="col-md-6">							
+								<input  type="text" placeholder="Email*" required="required">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<input type="text" placeholder="Subject">
+						</div>
+						<div class="col-md-12">
+							<textarea name="message" cols="45" rows="7" placeholder="Message to me"></textarea>
+						</div>
+						<div class="submit-btn">
+							<button id="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<footer>
+					<div class="col-md-4">
+						<p>Address: enean sed libero aliquam.</p>
+						<p>Phone number: 0000-111-222</p>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+						<a href="#"><i class="fab fa-codepen"></i></a>
+						<a href="#"><i class="fab fa-pinterest"></i></a>
+					</div>
+			</footer>
+		<script type="text/javascript">
+			
+			  ScrollOut({
+		        targets: ".navbar",
+		        offset: 30
+		      },
+		      );
+		</script>
+		<script src="./projecttab.js"></script>
+	</body>
+</html>
